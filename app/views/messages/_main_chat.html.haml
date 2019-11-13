@@ -1,0 +1,34 @@
+.main
+  .main__header
+    .main__header__title
+      .main__header__title__logo   
+        グループ名
+      .main__header__title__memmber
+        member :フロント太郎
+    .main__header__edit_btn
+      Edit
+
+  .main__contents
+    .main__chat
+      .main__chat__title
+        .main__chat__title__user_name
+          name
+        .main__chat__title__date
+          2019/11/10
+      .main__chat__text
+        text
+
+  .form
+    .form__input
+      %input.input-box{placeholder: "type a message", style: "border:none"}
+      %label.input-box__image 
+        = icon('fas', 'image')
+        %input.file-btn{type: "file"}
+    %input.submit__btn{type: "submit", name: "submit", value: "Send"}
+
+
+
+
+
+
+

@@ -1,0 +1,41 @@
+$main_color: #38AEF0;
+$sub_color: #FFFFFF;
+
+    .sidebar__header{
+        background-color:#253141;
+        width: calc(300px - 40px);
+        height: 100px;
+        padding: 0px 20px;
+        display: flex;
+        justify-content: flex-end;
+        &__logo{
+        font-size: 16px;
+        font-weight: bold;
+        color: $sub_color;
+        line-height: 100px;
+        }
+        &__icon{
+            line-height: 100px;
+            margin-left: auto;
+            i{
+                color: white;
+            }
+        }
+    }
+
+    .sidebar__contents{
+        background-color: #2f3e51;
+        height: calc(100vh - 140px);
+        width: 300px - 40px;
+        padding: 20px 20px;
+        &__group_name{
+            font-size: 15px;
+            font-weight: bold;
+            color: $sub_color;
+        }
+        &__text{
+            font-size: 11px;
+            font-weight: bold;
+            color: $sub_color;   
+        }
+    }
