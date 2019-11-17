@@ -1,0 +1,13 @@
+$main_color: #38AEF0;
+$sub_color: #FFFFFF;
+
+.flash {
+    color: $sub_color;
+    text-align: center;
+    &__alert{
+      background-color: red;
+    }
+    &__notice {
+      background-color: $main_color;
+    }
+  }
