@@ -3,7 +3,7 @@
     .sidebar__header__logo
       = current_user.name
     .sidebar__header__icon
-      =link_to "#" do
+      =link_to new_group_path do
         %i.fas.fa-edit
       =link_to edit_user_path(current_user) do
         %i.fas.fa-cog
@@ -11,7 +11,8 @@
         
         
   .sidebar__contents
-    .sidebar__contents__group_name
-      グループ名
-    .sidebar__contents__text
-      まだメッセージはありません
+    - current_user.groups.each do |group|
+      .sidebar__contents__group_name
+        =group.group_name
+      .sidebar__contents__text
+        まだありません

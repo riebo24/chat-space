@@ -1,6 +1,6 @@
 class Group < ApplicationRecord
 #   has_many chats
-  has_many groups_users
-  has_many users throuth groups_users
-  validates :name, presence: true, uniqueness: true
+  has_many :group_users
+  has_many :users, through: :group_users
+  validates :group_name, presence: true, uniqueness: true
 end
