@@ -1,6 +1,6 @@
 class GroupsController < ApplicationController
-   def index
-     
+   def index 
+    @groups = current_user.groups     
    end
 
    def new
@@ -25,7 +25,7 @@ class GroupsController < ApplicationController
 
     @group = Group.find(params[:id])
     if @group.update(group_params)
-     redirect_to root_path, notice: 'グループを更新しました'  
+     redirect_to group_chats_path(@group.id), notice: 'グループを更新しました'  
     else 
       render :edit
     end    
