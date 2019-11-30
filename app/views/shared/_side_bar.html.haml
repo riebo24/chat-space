@@ -13,6 +13,8 @@
   .sidebar__contents
     - current_user.groups.each do |group|
       .sidebar__contents__group_name
-        =group.group_name
+        =link_to "#{group.group_name}", group_chats_path(group.id), style: "color: white"
       .sidebar__contents__text
-        まだありません
+        = group.show_last_chat
+
+

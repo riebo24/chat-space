@@ -1,0 +1,27 @@
+.main
+  .main__header
+    .main__header__title
+      .main__header__title__logo   
+        = @group.group_name
+      .main__header__title__memmber
+        = "member : " 
+        - @group.users.each do |user|
+          #{user.name}&nbsp;
+    .main__header__edit_btn
+      =link_to "Edit", edit_group_path(@group.id), style:"text-decoration: none;"
+
+  .main__contents
+    = render @chats
+
+        
+  .form
+    = form_for [@group, @chat] do |f|  
+      .form__input
+        = f.text_field :text, class: "input-box", placeholder: "type a message", style: "border:none"
+        = f.label :image, class: "input-box__image" do
+          = icon('fas', 'image')
+          = f.file_field :image, class: "file-btn", type: "file"
+      = f.submit "Send", class: "submit__btn"
+
+
+
