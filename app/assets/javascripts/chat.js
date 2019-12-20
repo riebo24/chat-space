@@ -34,11 +34,16 @@ $(function(){
     }
     return html;
   }
+  
+  // function resetForm(){
+  //   $(".form").reset();
+  // }
 
   $("#new_chat").on("submit",function(e){
     e.preventDefault()
     var formdata = new FormData(this);
     var url = $(this).attr('action');
+
     $.ajax({
       type: "POST",
       url: url,
@@ -50,13 +55,16 @@ $(function(){
     .done(function(formdata){
       var html = buildHTML(formdata);
       $(".main__contents").append(html);
-      $(".input-box").val("");
+      // $(".input-box").val("");
+      console.log
       $('.submit__btn').prop('disabled', false);
+      $(".new_chat")[0].reset();
       $(".main__contents").animate({scrollTop: $('.main__contents')[0].scrollHeight});
     })
     .fail(function() {
       alert("メッセージ送信に失敗しました");
-    });
+      $('.submit__btn').prop('disabled', false);
+    })
   })
 })
 
