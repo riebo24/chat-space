@@ -55,8 +55,6 @@ $(function(){
     .done(function(formdata){
       var html = buildHTML(formdata);
       $(".main__contents").append(html);
-      // $(".input-box").val("");
-      console.log
       $('.submit__btn').prop('disabled', false);
       $(".new_chat")[0].reset();
       $(".main__contents").animate({scrollTop: $('.main__contents')[0].scrollHeight});
