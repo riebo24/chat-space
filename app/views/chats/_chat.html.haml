@@ -3,7 +3,7 @@
     .main__chat__title__user_name
       = chat.user.name
     .main__chat__title__date
-      = chat.created_at
+      = chat.created_at.strftime("%Y/%m/%d %H:%M")
   .main__chat__text
     = chat.text if chat.text.present?
   = image_tag chat.image.url, class: 'main__chat__image' if chat.image.present?
