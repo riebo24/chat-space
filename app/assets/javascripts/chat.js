@@ -49,12 +49,10 @@ $(function(){
     })
     .done(function(formdata){
       var html = buildHTML(formdata);
-      // debugger
       $(".main__contents").append(html);
       $(".input-box").val("");
       $('.submit__btn').prop('disabled', false);
       $(".main__contents").animate({scrollTop: $('.main__contents')[0].scrollHeight});
-      console.log("OK");
     })
     .fail(function() {
       alert("メッセージ送信に失敗しました");
