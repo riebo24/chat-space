@@ -34,10 +34,6 @@ $(function(){
     }
     return html;
   }
-  
-  // function resetForm(){
-  //   $(".form").reset();
-  // }
 
   $("#new_chat").on("submit",function(e){
     e.preventDefault()
