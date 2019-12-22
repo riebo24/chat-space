@@ -60,6 +60,6 @@ $(function(){
       $('.submit__btn').prop('disabled', false);
     })
   })
-})
+});
 
 
