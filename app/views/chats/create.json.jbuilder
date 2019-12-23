@@ -5,5 +5,5 @@ json.created_at @chat.created_at.strftime("%Y/%m/%d %H:%M")
 
 json.group_id @chat.group_id
 json.user_id @chat.user_id
-
+json.id @chat.id
 json.updated_at @chat.updated_at
