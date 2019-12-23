@@ -47,41 +47,6 @@ $(function(){
     };
     return html;
   }
-  // });
-  // function buildHTML(chat){
-  //   if (chat.image.url) {
-  //     var html = `<div class="main__chat">
-  //                   <div class="main__chat__title">
-  //                     <div class="main__chat__title__user_name">
-  //                       ${chat.name}
-  //                     </div>
-  //                     <div class="main__chat__title__date">
-  //                       ${chat.created_at}
-  //                     </div>
-  //                   </div>
-  //                   <div class="main__chat__text">
-  //                     ${chat.text}
-  //                   </div>                     
-  //                   <img class="main__chat__image" src= ${chat.image.url} >
-  //                   </div>
-  //                 </div>`
-  //   }else{
-  //     var html = `<div class="main__chat">
-  //                   <div class="main__chat__title">
-  //                     <div class="main__chat__title__user_name">
-  //                       ${chat.name}
-  //                     </div>
-  //                     <div class="main__chat__title__date">
-  //                       ${chat.created_at}
-  //                     </div>
-  //                   </div>
-  //                   <div class="main__chat__text">
-  //                     ${chat.text}
-  //                   </div>                  
-  //                 </div>`
-  //   }
-  //   return html;
-  // }
 
   $("#new_chat").on("submit",function(e){
     e.preventDefault()
