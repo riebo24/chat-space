@@ -1,5 +1,5 @@
 class ChatsController < ApplicationController
-  before_action :set_groupt
+  before_action :set_group
 
   def index
     @chat = Chat.new
