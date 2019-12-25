@@ -29,10 +29,11 @@ $sub_color: #FFFFFF;
         height: calc(100vh - 140px);
         width: 300px - 40px;
         padding: 20px 20px;
+        text-decoration: none;
         &__group_name{
-            font-size: 15px;
-            font-weight: bold;
-            text-decoration: none;
+          font-size: 15px;
+          font-weight: bold;
+          text-decoration: none;
         }
         &__text{
             font-size: 11px;

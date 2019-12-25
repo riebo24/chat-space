@@ -12,7 +12,6 @@
         
   .sidebar__contents
     - current_user.groups.each do |group|
-      .sidebar__contents__group_name
-        =link_to "#{group.group_name}", group_chats_path(group.id), style: "color: white"
+      =link_to "#{group.group_name}", group_chats_path(group.id), style: "color: white", class: "sidebar__contents__group_name"
       .sidebar__contents__text
         = group.show_last_chat

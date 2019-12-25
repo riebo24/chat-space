@@ -7,8 +7,7 @@
         = "member : " 
         - @group.users.each do |user|
           #{user.name}&nbsp;
-    .main__header__edit_btn
-      =link_to "Edit", edit_group_path(@group.id), style:"text-decoration: none;"
+    =link_to "Edit", edit_group_path(@group.id), style:"text-decoration: none;", class:"main__header__edit_btn"
 
   .main__contents
     = render @chats
