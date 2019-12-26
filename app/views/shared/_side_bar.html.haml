@@ -8,8 +8,7 @@
       =link_to edit_user_path(current_user) do
         %i.fas.fa-cog
   
-        
-        
+                
   .sidebar__contents
     - current_user.groups.each do |group|
       =link_to "#{group.group_name}", group_chats_path(group.id), style: "color: white", class: "sidebar__contents__group_name"
