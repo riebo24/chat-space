@@ -7,7 +7,7 @@ $sub_color: #FFFFFF;
     width: calc(100vw - 300px);
     display: flex;
     justify-content: space-between;
-    border: solid 1px #eeeeee;
+    border-bottom: solid 1px #eeeeee;
     &__title{
         display: flex;
         flex-direction: column;
