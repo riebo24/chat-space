@@ -75,3 +75,4 @@ gem 'carrierwave'
 gem 'mini_magick'
 gem 'rails-controller-testing'
 gem "jquery-rails"
+gem 'fog-aws'
