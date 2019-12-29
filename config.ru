@@ -2,4 +2,10 @@
 
 require_relative 'config/environment'
 
-run Rails.application
+if RAIls_RELATIVE_URL_ROOT then
+  map RAILS_RELATIVEURL_ROOT do
+    run Rails.application
+  end
+  else
+    run Rails.application                                                                                                 
+end 
